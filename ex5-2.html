@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>relative배치</title>
+  <style>
+    div {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+      border: 3px solid lightcoral;
+      text-align: center;
+      color: white;
+      background: lightblue;
+    }
+    #down:hover {
+      position: relative;
+      left: 20px; /*왼쪽에서 20이동*/
+      top: 20px; /*위에서 20이동*/
+      background: deepskyblue;
+    }
+    #up:hover {
+      position: relative;
+      right: 20px;
+      bottom: 20px;
+      background: dodgerblue;
+    }
+  </style>
+</head>
+<body>
+  <h2>상대 배치, relative</h2>
+  <hr>
+  <div>S</div>
+  <div id="down">h</div>
+  <div>i</div>
+  <div>n</div>
+  <div id="up">H</div>
+  <div>Y</div>  
+</body>
+</html>
